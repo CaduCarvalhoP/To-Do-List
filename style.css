@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Shadows+Into+Light+Two&display=swap");
+
+/* Color Theme Swatches in Hex */
+.My-Color-Theme-1-hex { color: #CDD7DA; }/*div do todo*/
+.My-Color-Theme-2-hex { color: #1b272a; } /*texto do botão*/
+.My-Color-Theme-3-hex { color: #8FCCDF; }/*todo feito*/
+.My-Color-Theme-4-hex { color: #395259; }/*botoes*/
+.My-Color-Theme-5-hex { color: #9CA3A6; } /*fundo*/
+
+/* Color Theme Swatches in RGBA */
+.My-Color-Theme-1-rgba { color: rgba(205, 215, 218, 1); }
+.My-Color-Theme-2-rgba { color: rgba(84, 88, 89, 1); }
+.My-Color-Theme-3-rgba { color: rgba(143, 204, 223, 1); }
+.My-Color-Theme-4-rgba { color: rgba(57, 82, 89, 1); }
+.My-Color-Theme-5-rgba { color: rgba(156, 163, 166, 1); }
+
+/* Color Theme Swatches in HSLA */
+.My-Color-Theme-1-hsla { color: hsla(193, 14, 82, 1); }
+.My-Color-Theme-2-hsla { color: hsla(191, 2, 33, 1); }
+.My-Color-Theme-3-hsla { color: hsla(194, 55, 71, 1); }
+.My-Color-Theme-4-hsla { color: hsla(193, 21, 28, 1); }
+.My-Color-Theme-5-hsla { color: hsla(198, 5, 63, 1); }
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Caveat Brush", cursive;
+  box-sizing: border-box;
+}
+body {
+  background-color: #9CA3A6;
+}
+button {
+  background-color: #395259;
+  
+  border: 2px solid #1b272a;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+button:hover {
+  background-color: #1b272a;
+  color: white;
+}
+button:hover > i {
+  color: white;
+}
+button i {
+  color: #1b272a;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+input,
+select {
+  padding: 0.25rem 0.5rem;
+}
+.hide {
+  display: none;
+}
+/* todo herader */
+.container {
+  max-width: 450px;
+  margin: 3rem auto ;
+  background-color: #CDD7DA;
+  padding: 1.5rem;
+
+  border-radius: 39px;
+  background: linear-gradient(145deg, #787878, #656565);
+  box-shadow: -50px -50px 100px #b3b3b3,
+  2px 2.7px 1.6px rgba(0, 0, 0, 0.071),
+  4.5px 6.2px 3.6px rgba(0, 0, 0, 0.125),
+  7.9px 10.8px 6.3px rgba(0, 0, 0, 0.171),
+  12.5px 17.2px 10px rgba(0, 0, 0, 0.211),
+  19.3px 26.5px 15.5px rgba(0, 0, 0, 0.251),
+  30.1px 41.3px 24.1px rgba(0, 0, 0, 0.296),
+  50px 68.6px 40px rgba(0, 0, 0, 0.356),
+  100px 137px 80px rgba(0, 0, 0, 0.49)
+;
+}
+.container header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+   border-bottom:  1px  solid rgb(63, 63, 63);
+}
+/* todo form*/
+#to-doform,#edit-form{
+    padding: 1rem;
+    border-bottom: 1px solid rgb(63, 63, 63);
+}
+#to-doform p,#edit-form p{
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+.form-control{
+    display: flex;
+    padding-bottom: 0.1rem;
+    border-bottom: 1px solid rgb(63,63,63);
+}
+
+#cancel-edit-btn{
+    margin-top: 1rem;
+}
+
+/* todo list*/
+.todo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    padding: 1rem;
+    border-bottom: 1 solid rgb(63, 63, 63);
+    transition: .3s;
+}
+.todo h3{
+    flex: 1;
+    font-size: 0,9rem;
+}
+.todo button{
+    margin-left: 0.4rem;
+}
+
+.done{
+    background-color: #8FCCDF;
+}
+.done h3{
+    color:black;
+    text-decoration: line-through;
+    font-style: italic;
+}
